@@ -1,0 +1,227 @@
+/* 
+    Document   : admin.css
+    Created on : 12-may-2012, 4:13:42
+    Author     : Pavel Cabral Vida
+    Description: Purpose of the stylesheet follows.
+*/
+
+body, table {
+    font-size: 12px;
+    font-family: verdana;
+}
+
+
+/*label {
+	width: 4em;
+	float: left;
+	text-align: right;
+	margin-right: 0.5em;
+	display: block;
+}
+input {
+	margin-left: 4.5em;
+}*/
+
+#contenedor {
+	margin: 0 auto;
+	width: 950px;
+}
+/*
+#cabecera {
+	border: 1px solid;
+	padding: 2em;
+}
+#menu {
+	border: 1px solid;
+	float: left;
+	width: 15em;
+}
+#principal {
+	border: 1px solid;
+	margin-left: 16em;
+	padding-right: 1em;
+}
+*/
+
+#menu {
+    margin-bottom: 12px;
+}
+
+#m_buscar {
+    float: right;
+}
+
+ul.nav {
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid #000;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+ul.nav li {
+    display: inline;
+}
+ul.nav li a {
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    padding: 5px 15px 5px 15px;
+    margin-left: 5px;
+    background-color: #AABBCC;
+    text-decoration: none;
+    color: #333;
+}
+ul.nav li a:hover {
+    background-color: #CCBBAA;
+    background-position: 3px 50%;
+}
+
+#datos_usuario {
+    display: table;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    /*float: left;*/
+    background-color: #DFEFFC;
+    border: 1px solid #C5DBEC;
+    color: #2E6E9E;
+}
+#du1, #du2, #du3 {
+    float: left;
+    display: table;
+}
+#du1, #du2, #du3 > div {
+    display: table-row;
+}
+
+.dc1 {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.id {
+    width: 30px;
+    text-align: center;
+}
+.tec, .usu {
+    width: 70px;
+    text-align: center;
+}
+.est {
+    width: 50px;
+    text-align: center;
+}
+.cat {
+    width: 75px;
+    text-align: center;
+}
+.fea, .fec {
+    width: 110px;
+    text-align: center;
+}
+.arc, .id, .tec, .usu, .est, .cat, .des, .obs, .fea, .fec {
+    vertical-align: top;
+    padding: 4px;
+}
+.obs {
+    max-width: 22em;
+}
+
+/*td {
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    margin: 0;
+    padding: 4px;
+}*/
+.fea .fec {
+    width: 135px;
+}
+
+#incidencias {
+    clear: both;
+}
+
+/*table {
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    width: 100%;
+}*/
+
+#filtro > * > * {
+    float: left;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+#table_usuario, #table_usuario td {
+    border-style: none;
+}
+
+#table_usuario tr td:first-child {
+    font-weight: bold;
+    text-align: right;
+}
+
+.radius {
+    border-radius: 10px;
+}
+
+.row {
+    display: table-row;
+    float: left;
+    margin: 0 10px;
+}
+.cell {
+    display: table-cell;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+/* Auto Complete */
+.autocomplete-w1 { /*background:url(img/shadow.png) no-repeat bottom right; */position:absolute; top:0px; left:0px; margin:6px 0 0 6px; /* IE6 fix: */ _background:none; _margin:1px 0 0 0; }
+.autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; overflow:hidden; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }
+
+
+#varjs {
+    visibility: hidden;
+    display: none;
+}
+
+/* Mejoras CSS de JQuery-UI (ui.jqgrid.css) */
+/* En ui.jqgrid.css (línea 36) tenemos el estilo para .ui-jqgrid tr.jqgrow td
+ * con la propiedad white-space: pre. Se fuerza aquí a nowrap !important para
+ * que se vea mejor el GRID.
+ * http://www.trirand.net/forum/default.aspx?g=posts&t=844 */
+.ui-jqgrid tr.jqgrow td {
+    white-space: nowrap !important;
+}
+.ui-jqdialog-content .form-view-label {
+    vertical-align: top;
+}
+.ui-jqdialog-content .form-view-data {
+    border: 1px solid #A6C9E2 !important;
+    border-radius: 5px !important;
+    padding: 5px !important;
+    white-space: pre-line !important;
+}
+
+
+.my-ui-icon-trash {
+    background-image: url("/css/redmond/images/ui-icons_6da8d5_256x240.png");
+    background-position: -176px -98px;
+    height: 16px;
+    /*left: 9em;*/
+    position: absolute;
+    width: 16px;
+}
+.my-file {
+    font-size: 12px;
+    margin-left: 24px;
+}

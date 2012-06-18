@@ -1,0 +1,16 @@
+/* 
+    Document   : admin.css
+    Created on : 12-may-2012, 4:13:42
+    Author     : Pavel Cabral Vida
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+    display: block;
+}
+
+#filtro > div {
+    float: left;
+}
+
