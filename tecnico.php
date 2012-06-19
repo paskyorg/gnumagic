@@ -4,9 +4,8 @@
 session_start(); //var_dump($_SESSION);
 
 /* Si no existe la variable de sesión, redirige a login.php */
-if (!isset($_SESSION['usuario']['id_usu'])) {
+if (!isset($_SESSION['usuario']['id_tec'])) {
     header('Location: login.php');
-    exit;
 }
 
 /* Includes */
@@ -38,12 +37,12 @@ $smarty = new MySmarty();
 $smarty->assign('titulo', 'Gnu Magic - Incidencias');
 $smarty->assign('cssfile', 'css/general.css');
 $smarty->assign('m_buscar', TRUE);
-$smarty->assign('principal', 'inicio.tpl');
+$smarty->assign('principal', 'tecnico.tpl');
 $smarty->assign('usuario', $_SESSION['usuario']);
 $smarty->assign('varjs', TRUE);
 $smarty->assign('estados', $arrEstados);
 $smarty->assign('categorias', $arrCategorias);
-$smarty->assign('grid', 'js/gridusuario.js');
+$smarty->assign('grid', 'js/gridtecnico.js');
 $smarty->display('plantilla.tpl');
 
 ?>
