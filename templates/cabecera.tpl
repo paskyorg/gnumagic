@@ -14,23 +14,25 @@
             /* font-size: 75%; */
         }
 </style>
-    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.autocomplete.js"></script>
+    <!-- <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.autocomplete.js"></script> -->
     <!-- <script type="text/javascript" src="/js/jquery-ui-1.8.21.custom.min.js"></script> -->
-    <script type="text/javascript" src="/js/jquery-ui-1.8.21.custom.js"></script>
-    <script type="text/javascript" src="/js/i18n/grid.locale-es.js"></script>
-    <!-- <script type="text/javascript" src="/js/i18n/grid.locale-en.js"></script> -->
+    <script type="text/javascript" src="js/jquery-ui-1.8.21.custom.js"></script>
+    <script type="text/javascript" src="js/i18n/grid.locale-es.js"></script>
     <!-- <script type="text/javascript" src="/js/jquery.jqGrid.min.js"></script> -->
-    <script type="text/javascript" src="/js/jquery.jqGrid.src.js"></script>
+    <script type="text/javascript" src="js/jquery.jqGrid.src.js"></script>
     <!-- jQuery-File-Upload on -->
     <script src="js/jquery.iframe-transport.js"></script>
     <script src="js/jquery.fileupload.js"></script>
     <!-- jQuery-File-Upload off -->
-    <script type="text/javascript" src="/js/grid1.js"></script>
+    {if isset($grid)}
+    <script type="text/javascript" src="{$grid}"></script>
+    {/if}
 </head>
 <body>
 <div id="contenedor">
     <div id="cabecera">
         <h1>{$titulo}</h1>
-        {*<h3>Bienvenido {$nombre}</h3>*}
+        {*<h3>Bienvenido {$usuario.fullname}</h3>*}
     </div>

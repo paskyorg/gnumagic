@@ -7,22 +7,7 @@
 {/if}
 {*/menu*}
 {*principal*}
-{if $principal == 'inicio'}
-    {include file='inicio.tpl'}
-{elseif $principal == 'incidencias'}
-    {include file='incidencias.tpl'}
-{elseif $principal == 'nueva-incidencia'}
-    {include file='nueva-incidencia.tpl'}
-{elseif $principal == 'incidencia'}
-    {include file='incidencia.tpl'}
-{*administracion*}
-{elseif $principal == 'admin-inicio.tpl'}
-    {include file=$principal}
-{elseif $principal == 'admin-incidencia.tpl'}
-    {include file=$principal}
-{elseif $principal == 'admin-incidencias.tpl'}
-    {include file=$principal}
-{else}
+{if isset($principal)}
     {include file=$principal}
 {/if}
 {*/principal*}
